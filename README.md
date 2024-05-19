@@ -1147,7 +1147,7 @@ function Elements:Colorpicker(options)
 	end
 	local window = self._window
 	local callback = options.callback or function() end
-	local flag = options.flag; if not flag then window._undefinedFlags + = 1; flag = 'undefined_'..window._undefinedFlags end
+	local flag = options.flag; if not flag then window._undefinedFlags =+ 1; flag = 'undefined_'..window._undefinedFlags end
 	local callback = options.callback or function() end
 
 
